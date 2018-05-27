@@ -1,0 +1,116 @@
+The possible values are :
+
+*Some Random Text*
+ConsolePackageFileName
+APP_TYPE
+APP_VER
+ATTRIBUTE
+ATTRIBUTE2
+CATEGORY
+CONTENT_ID
+CONTENT_VER
+DEV_FLAG
+DISC_TOTAL
+DISP_LOCATION_1
+DISP_LOCATION_2
+DOWNLOAD_DATA_SIZE
+EMU_VERSION
+FORMAT
+INSTALL_DIR_SAVEDATA
+IRO_TAG
+PARENTAL_LEVEL
+PROVIDER
+PROVIDER_00
+PROVIDER_01
+PROVIDER_02
+PROVIDER_03
+PROVIDER_04
+PROVIDER_05
+PROVIDER_06
+PROVIDER_07
+PROVIDER_08
+PROVIDER_09
+PROVIDER_10
+PROVIDER_11
+PROVIDER_12
+PROVIDER_13
+PROVIDER_14
+PROVIDER_15
+PROVIDER_16
+PROVIDER_17
+PROVIDER_18
+PROVIDER_19
+PROVIDER_20
+PS3_TITLE_ID_LIST_FOR_BOOT
+PUBTOOLINFO
+PUBTOOLVER
+PUBTOOL_VERSION// this parameter might have no use
+REMOTE_PLAY_KEY_ASSIGN
+SAVE_DATA_TRANSFER_TITLE_ID_LIST// this parameter might have no use
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_1
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_2
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_3
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_4
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_5
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_6
+SAVE_DATA_TRANSFER_TITLE_ID_LIST_7
+SERVICE_ID_ADDCONT_ADD_1
+SERVICE_ID_ADDCONT_ADD_2
+SERVICE_ID_ADDCONT_ADD_3
+SERVICE_ID_ADDCONT_ADD_4
+SERVICE_ID_ADDCONT_ADD_5
+SERVICE_ID_ADDCONT_ADD_6
+SERVICE_ID_ADDCONT_ADD_7
+SYSTEM_ROOT_VER
+SYSTEM_VER
+TITLE
+TITLE_00// ja or jp			- Japanese
+TITLE_01// en-US or en		- English (United States)
+TITLE_02// fr-FR or fr		- French
+TITLE_03// es-ES or es		- Spanish
+TITLE_04// de					- German
+TITLE_05// it					- Italian
+TITLE_06// nl					- Dutch
+TITLE_07// pt-PT or pt		- Portuguese
+TITLE_08// ru					- Russian
+TITLE_09// ko					- Korean
+TITLE_10// zh-Hant or zh_t	- Chinese (Traditional)
+TITLE_11// zh-Hans or zh_s	- Chinese (Simplified)
+TITLE_12// fi					- Finnish
+TITLE_13// sv					- Swedish
+TITLE_14// da					- Danish
+TITLE_15// no					- Norwegian
+TITLE_16// pl					- Polish
+TITLE_17// pt-BR or pt-br		- Portuguese (Brazil)
+TITLE_18// en-GB or en-gb		- English (United Kingdom)
+TITLE_19// tr					- Turkish
+TITLE_20// es-LA				- Spanish (Latin America)
+TITLE_21// ar					- Arabic
+TITLE_22// fr-CA				- French (Canada)
+TITLE_23// cs					- Czech
+TITLE_24// hu					- Hungarian
+TITLE_25// el					- Greek
+TITLE_26// ro					- Romanian
+TITLE_27// th					- Thai
+TITLE_28// vi					- Vietnamese
+TITLE_29// in					- Indonesian
+TITLE_ID
+USER_DEFINED_PARAM_1
+USER_DEFINED_PARAM_2
+USER_DEFINED_PARAM_3
+USER_DEFINED_PARAM_4
+VERSION
+
+If a value is missing then there will be no text coming from it.
+
+An example :
+
+ConsolePackageFileName = "abc"
+TITLE_ID = "gfd"
+TITLE = ""
+
+"hello",ConsolePackageFileName,"ooo",TITLE, -, TITLE_ID,315
+
+result :
+
+"helloabcooo-gfd315.sym.pkg"
