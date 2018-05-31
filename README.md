@@ -1,5 +1,9 @@
 # USB Fake Packages
-USB Fake Packages is a tool I've made for the PS4 Jailbreak, based on version 4.55 and probably won't work on 4.05 so I wouldn't suggest trying.
+USB Fake Packages is a tool I've made for the PS4 Jailbreak, based on versions 4.55 and 5.05.
+
+The tool would probably not work on 4.05 so I wouldn't suggest trying.
+
+There are 2 versions of the tool, 1.0b and 1.1, 1.0b is for version 4.55 and 1.1 is for version 5.05.
 
 The tool searches the console for fake packages based on the routes given by the user and links them with the USB fake packages based on the conditions the user have entered (whether it's linking with existent USB fake packages or copying from the console to the USB and then linking, in some cases an operation might fail due to the entered conditions, for example if a fake package already exists in the destination and it's not matching the console fake package (or not checking for a match in the conditions) so it won't delete the fake package in the destination for safety, and skip that console package file, another example is a copy attempt failing because of USB drive lack of space).
 
@@ -90,33 +94,59 @@ The CFG file is consisted of 3 sections, the order of them or their keys is less
 
 Section 1, "Options" :
 
-The section has 6 keys, the section decides all the basic options required for the tool to function properly.
+The section has 4 keys, the section decides all the basic options required for the tool to function properly.
 
-Section 1, Key 1, "CheckUSBConsoleRootFolder" :
+Section 1, Key 1, "CheckUSBConsoleRoot" :
 
-This key is for the folder path that the console will use in the USB as a working space, the key has 1 value, and it can be valued as as "false" or a location, while false means that one won't transfer files there, copy conditions will be off and it'll only match package files with the USB routes and won't transfer them afterwards (means that the TransferPackageFile condition in the USB routes is off).
+This key is for the folder path that the console will use in the USB as a working space, the key has 2 values.
 
-Section 1, Key 2, "CheckUSBConsoleRootPackageFile" :
+Section 1, Key 1, Value 1, "CheckUSBConsoleRootFolder" :
+
+This value is for mentioning the folder path that the console will use in the USB as a working space.
+
+The value can be set as "false" or a location, while false means that one won't transfer files there, copy conditions will be off and it'll only match package files with the USB routes and won't transfer them afterwards (means that the TransferPackageFile condition in the USB routes is off).
+
+A location goes for the working space.
+
+Section 1, Key 1, Value 2, "CheckUSBConsoleRootPackageFile" :
 
 Check if the package file already exists in the working space, true goes for check if it's and false goes for don't.
 
-Section 1, Key 3, "USBPackageFileNameElements" :
+If a match has been found then linking with the correct match.
+
+note : if the first value of this key is set as false then the key should only have 1 value which is the first.
+
+(CheckUSBConsoleRoot = false;)
+
+Section 1, Key 2, "USBPackageFileNameElements" :
 
 The elements that the USB package file name is consisted of, check the file USBPackageFileNameElements.txt file in the root folder of this project for all the possible values.
 
-Section 1, Key 4, "CopyConsolePackageFile" :
+Each element takes a place in 1 value, and the key supports unlimited values.
+
+Set as false for no elements, in case of only linking with existing files found in USB routes.
+
+Section 1, Key 3, "CopySourceFile" :
+
+The conditions of whether or not to copy console package files, the key has 2 values
+
+Section 1, Key 3, Value 1, "CopyConsolePackageFile" :
 
 Copy console package file if needed, true goes for copy, false goes for don't.
 
-Section 1, Key 5, "CopySourceFileMaxProcessSystemMessagesAmount" :
+Section 1, Key 3, Value 2, "CopySourceFileMaxProcessSystemMessagesAmount" :
 
 The amount of messages that will be shown during the copy process at max, for example, if it's set as 5 then 0-20% will be shown, as well as 20-40%, 40-60%, 60-80%, 80-100%, a possible routine might be 13% completed, 27%, 53%, 68%, 88%, 5 is max but not necessarily will happen every time, 33%, 84% is also a possible routine, most likely for a small fake package file.
 
 There is also a time limit between messages, it's not up to the user as of now and set for 10 seconds (means that messages during the copy process won't be seen without a 10 seconds time space between them).
 
-Section 1, Key 6, "CheckSymlinkExistenceShowSystemMessages" :
+note : if the first value of this key is set as false then the key should only have 1 value which is the first.
 
-Show a message if a console package file already has a symlink, saying that the certain console package file already has a symlink.
+(CopySourceFile = false;)
+
+Section 1, Key 4, "CheckSymlinkExistenceShowSystemMessages" :
+
+Show a message if a console package file already has a symlink, saying that the certain console package file already has a symlink, true goes for show, false goes for don't.
 
 In my opinion if one a packages collector this option might get annoying, when seeing the message "the package file *X* already has a symlink" 7357 times in a row, but for a small packages amount it's quite nicely.
 
@@ -134,7 +164,7 @@ The route to search in the console, written as "Console/X" or just "Console" if 
 
 MaxConsoleSubFolderLevels :
 
-The max dive into the route sub folders, 1 goes for 1 max dive, 0 goes for none, -1 goes for infinite, etc.
+The max dive into the route sub folders, 1 goes for 1 max dive, 0 goes for none, "Infinite" goes for infinite, etc.
 
 ConsoleDeniedFolderPath_X :
 
@@ -162,7 +192,7 @@ If a match has been found whether to change the name of the USB fake package fil
 
 MaxUSBSubFolderLevels :
 
-The max dive into the route sub folders, 1 goes for 1 max dive, 0 goes for none, -1 goes for infinite, etc.
+The max dive into the route sub folders, 1 goes for 1 max dive, 0 goes for none, "Infinite" goes for infinite, etc.
 
 USBDeniedFolderPath_X :
 
