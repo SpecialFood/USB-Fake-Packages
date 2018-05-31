@@ -128,13 +128,13 @@ Set as false for no elements, in case of only linking with existing files found 
 
 Section 1, Key 3, "CopySourceFile" :
 
-The conditions of whether or not to copy console package files, the key has 2 values
+The conditions of whether or not to copy console package files, the key has 2 values.
 
 Section 1, Key 3, Value 1, "CopyConsolePackageFile" :
 
 Copy console package file if needed, true goes for copy, false goes for don't.
 
-Section 1, Key 3, Value 2, "CopySourceFileMaxProcessSystemMessagesAmount" :
+Section 1, Key 3, Value 2, "MaxProcessSystemMessagesAmount" :
 
 The amount of messages that will be shown during the copy process at max, for example, if it's set as 5 then 0-20% will be shown, as well as 20-40%, 40-60%, 60-80%, 80-100%, a possible routine might be 13% completed, 27%, 53%, 68%, 88%, 5 is max but not necessarily will happen every time, 33%, 84% is also a possible routine, most likely for a small fake package file.
 
