@@ -64,14 +64,14 @@ SERVICE_ID_ADDCONT_ADD_7
 SYSTEM_ROOT_VER
 SYSTEM_VER
 TITLE
-TITLE_00// ja or jp			- Japanese
-TITLE_01// en-US or en		- English (United States)
-TITLE_02// fr-FR or fr		- French
-TITLE_03// es-ES or es		- Spanish
+TITLE_00// ja or jp					- Japanese
+TITLE_01// en-US or en				- English (United States)
+TITLE_02// fr-FR or fr				- French
+TITLE_03// es-ES or es				- Spanish
 TITLE_04// de					- German
 TITLE_05// it					- Italian
 TITLE_06// nl					- Dutch
-TITLE_07// pt-PT or pt		- Portuguese
+TITLE_07// pt-PT or pt				- Portuguese
 TITLE_08// ru					- Russian
 TITLE_09// ko					- Korean
 TITLE_10// zh-Hant or zh_t	- Chinese (Traditional)
@@ -81,12 +81,12 @@ TITLE_13// sv					- Swedish
 TITLE_14// da					- Danish
 TITLE_15// no					- Norwegian
 TITLE_16// pl					- Polish
-TITLE_17// pt-BR or pt-br		- Portuguese (Brazil)
-TITLE_18// en-GB or en-gb		- English (United Kingdom)
+TITLE_17// pt-BR or pt-br				- Portuguese (Brazil)
+TITLE_18// en-GB or en-gb				- English (United Kingdom)
 TITLE_19// tr					- Turkish
-TITLE_20// es-LA				- Spanish (Latin America)
+TITLE_20// es-LA					- Spanish (Latin America)
 TITLE_21// ar					- Arabic
-TITLE_22// fr-CA				- French (Canada)
+TITLE_22// fr-CA					- French (Canada)
 TITLE_23// cs					- Czech
 TITLE_24// hu					- Hungarian
 TITLE_25// el					- Greek
