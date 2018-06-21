@@ -32593,4 +32593,5 @@ function writeHomebrewEN(p, addr) {
 	p.write4(addr.add32(0x0001fd3c), 0x69756572);
 	p.write4(addr.add32(0x0001fd40), 0x65730064);
 	p.write4(addr.add32(0x0001fd44), 0x67657274);
+	p.write4(addr.add32(0x0001fd48), 0x006469);
 }
