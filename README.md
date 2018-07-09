@@ -3,7 +3,7 @@ USB Fake Packages is a tool I've made for the PS4 Jailbreak, based on versions 4
 
 The tool would probably not work on 4.05 so I wouldn't suggest trying.
 
-There are 2 versions of the tool, 1.0c for version 4.55 and 1.1b for version 5.05.
+There are 2 versions of the tool, 1.01 for version 4.55 and 1.11 for version 5.05.
 
 The tool searches the console for fake packages based on the routes given by the user and links them with the USB fake packages based on the conditions the user have entered (whether it's linking with existent USB fake packages or copying from the console to the USB and then linking, in some cases an operation might fail due to the entered conditions, for example if a fake package already exists in the destination and it's not matching the console fake package (or not checking for a match in the conditions) so it won't delete the fake package in the destination for safety, and skip that console package file, another example is a copy attempt failing because of USB drive lack of space).
 

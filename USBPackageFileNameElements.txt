@@ -42,7 +42,9 @@ PROVIDER_18
 PROVIDER_19
 PROVIDER_20
 PS3_TITLE_ID_LIST_FOR_BOOT
+PT_PARAM
 PUBTOOLINFO
+PUBTOOLMINVER
 PUBTOOLVER
 PUBTOOL_VERSION// this parameter might have no use
 REMOTE_PLAY_KEY_ASSIGN
@@ -63,6 +65,7 @@ SERVICE_ID_ADDCONT_ADD_6
 SERVICE_ID_ADDCONT_ADD_7
 SYSTEM_ROOT_VER
 SYSTEM_VER
+TARGET_APP_VER
 TITLE
 TITLE_00// ja or jp		- Japanese
 TITLE_01// en-US or en	- English (United States)
@@ -109,8 +112,8 @@ ConsolePackageFileName = "abc"
 TITLE_ID = "gfd"
 TITLE = ""
 
-"hello",ConsolePackageFileName,"ooo",TITLE,    -, TITLE_ID,315
+"hello",ConsolePackageFileName,"ooo",TITLE,    -, "  , "TITLE_ID,315
 
 result :
 
-"helloabcooo-gfd315.sym.pkg"
+"helloabcooo-  , gfd315.sym.pkg"
